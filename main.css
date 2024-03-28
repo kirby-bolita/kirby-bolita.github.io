@@ -5,6 +5,26 @@ body {
   background-color: #44e1f0;
 }
 
+
+.navbar{
+  padding: 2rem;
+  background-color: #23252b;
+  color: #0428e9;
+}
+
+
+.navbar-collapse{
+  align-items:center;
+
+
+
+}
+@media screen and (max-width: 767){
+.navbar-brand{
+  display: none;
+}
+
+}
 header {
   background-color: #1e1ec0;
   opacity: 0.6;
@@ -75,29 +95,9 @@ section {
   text-align: center;
 }
 
-.search-container input[type=text] {
-  padding: 10px;
-  margin-top: 10px;
-  width: 70%;
-  border: none;
-  border-radius: 5px;
-}
 
-.search-container button {
-  padding: 10px 20px;
-  margin-top: 10px;
-  background: #333;
-  color: #0eeba1;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
 
-.search-container button:hover {
-  background: #444;
-}
 
-body,
 html {
   height: 100%;
   margin: 0;
@@ -129,7 +129,7 @@ html {
 .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content:space-between;
   max-width: 1200px;
   margin: 10px auto;
 }
@@ -163,17 +163,6 @@ html {
   position: absolute;
 }
 
-.box h2 {
-  margin: 0;
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: rgb(249, 252, 249);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-size: 21px;
-  font-family: monospace;
-}
 
 @media screen and (max-width: 768px) {
   .container {
@@ -183,60 +172,6 @@ html {
   .box {
     flex: 0 0 calc(50% - 10px);
   }
-}
-
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color:#25232b;
-  color: #f47521;
-}
-
-.container {
-  max-width: 700px;
-  margin: -80px auto 100px auto; /* Reduce el margen superior e inferior */
-  padding: 40px;
-  background-color: #ffffff;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-  text-align: center;
-  color: #f87a12;
-  margin-top: 10; /* Ajusta el margen superior */
-}
-
-#anime-list {
-  list-style-type: none;
-  padding: -80px auto;
-  color: blue;
-  margin-top: -90px auto -20px auto; /* Ajusta el margen superior */
-}
-
-.anime-item {
-  background-color: #f9f9f9;
-  padding: 5px;
-  margin-bottom: 2px;
-  border-radius: 5px;
-}
-
-input[type="text"] {
-  width: calc(100% - 70px);
-  padding: 10px;
-  margin-bottom: -80px;
-  border-radius: 5px 0 0 5px;
-  border: 1px solid #ccc;
-}
-
-button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 0 5px 5px 0;
-  cursor: pointer;
 }
 
 .sidebar {
