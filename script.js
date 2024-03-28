@@ -22,3 +22,20 @@ function rotateImages() {
 
 setInterval(rotateImages, 3000); // Cambia la imagen cada 3 segundos (3000 milisegundos)
 
+const apiKey = "RYLtn8ipd21UgPcXoWz";
+const url = "https://api.mixdrop.ag/endpoint"; // Reemplaza "endpoint" con el endpoint real de la API que estés utilizando
+
+fetch(url, {
+  method: 'GET', // Método de la solicitud (GET, POST, etc.)
+  headers: {
+    'Authorization': `Bearer ${apiKey}`, // Incluir la API Key en el encabezado Authorization
+    'Content-Type': 'application/json' // Tipo de contenido de la solicitud (si corresponde)
+  }
+})
+.then(response => response.json())
+.then(data => {
+  console.log(data); // Hacer algo con la respuesta de la API
+})
+.catch(error => {
+  console.error('Error:', error);
+});
